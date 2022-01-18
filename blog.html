@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helping Hands Found - Blogs TSF (Krishna Jadhav)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/22cbf97f67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo2.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="causes.html">CAUSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <h1>Blogs</h1>
+    </section>
+
+<!------blog page content------>
+
+    <section class="blog-content">
+
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/Education for all.webp">
+                <h2>Education For All</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur qui reiciendis quis nam, 
+                atque ad deleniti labore voluptates consequuntur debitis eaque dolores optio.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, accusamus voluptas, pariatur
+                sed voluptatibus itaque distinctio non inventore natus ipsam voluptatum blanditiis, culpa fugiat?
+                Iusto doloremque voluptas repellendus expedita odio.</p>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore fugit cumque voluptatum, in 
+                praesentium repellat eligendi odio necessitatibus doloribus itaque blanditiis atque eius, dolore 
+                non assumenda harum eaque! Odio eveniet ratione, maiores, repellat laborum vero quaerat quia quos 
+                officiis obcaecati laboriosam. Nesciunt similique ratione vitae explicabo debitis nobis laudantium 
+                impedit magnam recusandae quasi assumenda iusto porro animi, alias maiores consequuntur?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, accusamus voluptas, pariatur
+                sed voluptatibus itaque distinctio non inventore natus ipsam voluptatum blanditiis, culpa fugiat?
+                Iusto doloremque voluptas repellendus expedita odio.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Poverty</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Education</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Food for Childrens</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>End Child Poverty</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>Better World</span>
+                    <span>24</span>
+                </div>
+                <div>
+                    <span>Take Action</span>
+                    <span>18</span>
+                </div>
+                <div>
+                    <span>The Impact Initiative</span>
+                    <span>39</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer Section -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum nisi reprehenderit,
+        possimus iusto odit<br> asperiores ab alias sequi consectetur quae autem sed tenetur.</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made <i class="fa fa-heart-o"></i> by Krishna Jadhav © All Rights Reserved</p>
+    </section>
+
+ <!-- Javascript for Toggle Button -->
+    <script>
+    var navLinks =document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+    </script>
+
+</body>
+</html>

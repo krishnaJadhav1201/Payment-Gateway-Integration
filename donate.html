@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/22cbf97f67.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+
+    #payment {
+        display: flex;
+        justify-content: center;
+        margin-top: 300px;
+    }
+    
+</style>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo2.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="causes.html">CAUSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <h1>A small donation can make a Big Difference</h1>
+        <div id="payment">
+            <form>
+                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" 
+                data-payment_button_id="pl_IjBqH4zbPtiFQm" async> </script> </form>
+            </form>
+        </div>    
+    </section>
+
+ <!-- Javascript for Toggle Button -->
+    <script>
+    var navLinks =document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+    </script>
+
+</body>
+</html>
